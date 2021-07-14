@@ -46,7 +46,7 @@ int main(int ac, char* av[]){
         printf("Wow!got a call!\n");
         if(sock_fd == -1)
             oops("accept");
-        sock_fd = fdopen(sock_fd, "w");
+        sock_fp = fdopen(sock_fd, "w");
         if(sock_fp == NULL)
             oops("fdopen");
 
